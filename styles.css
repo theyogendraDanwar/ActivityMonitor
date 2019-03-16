@@ -1,0 +1,34 @@
+html, body, .container-fluid {
+  height: 100%;
+  overflow: hidden;
+  color: black;
+}
+
+html {
+  -webkit-app-region: drag;
+}
+
+.container-fluid {
+  padding: 25px;
+}
+
+.system_container {
+  font-family: 'Roboto, "Ubuntu derivate Powerline"';
+}
+
+.mem__container,
+.system_container,
+.cpu__usage__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.p-1 {
+  padding-top: 1rem;
+}
+.text-white {
+  color: white;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Activity Monitor</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./loading-bar.css"/>
+  <link rel="stylesheet" href="./styles.css"> 
+
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <!-- <div class="move-me">Click to move</div> -->
+    <div class="system_container">
+        <div>System Information</div>
+        <div class="system_container_info"></div>
+    </div>
+    <div class="network__container p-1"></div>
+    <div class="mem__container p-1">
+        <label for="memory">Memory</label>
+        <div class="ldBar ld-Bar__mem label-center  text-white" data-preset="bubble"
+        data-type="fill"	
+        data-pattern-size="10"
+        data-value="35"></div>
+    </div>
+    <div class="cpu__usage__container p-1">
+        <label for="memory">CPU Usage</label>
+        <div class="ldBar ld-Bar__usage label-center text-white" data-preset="bubble" data-pattern-size="10" data-value="100"></div>
+    </div>
+    
+    <canvas class="chart p-1" width="300" height="300"></canvas>
+  </div>
+ 
+ <script>
+  delete module.exports
+ </script>
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.bundle.min.js"></script>
+  <script src="./loading-bar.js"></script>
+  <script src="./window.js"></script>
+</body>
+
+</html>
