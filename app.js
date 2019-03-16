@@ -4,7 +4,7 @@ const {
   Menu,
 } = require('electron');
 let window = null;
-let DevMode = 1;
+let DevMode = 0;
 
 var windowDefaults = {
 	windowType: 'desktop',
